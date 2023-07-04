@@ -15,9 +15,4 @@ pipeline {
         }
     }
 }
-post{
-    success{
-        sh "echo ${env.ENV_NAME}"
-}
-}
 }
