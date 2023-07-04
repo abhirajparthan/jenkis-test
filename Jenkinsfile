@@ -1,7 +1,7 @@
 pipeline {
     agent any
  environment {
-        ENV_DATE = sh(script: 'date -u +"%Y%m%d%H%M"', returnStdout: true)
+        ENV_DATE = sh(script: 'date -u +"%Y%m%d%H%M%S"', returnStdout: true)
  }
    stages {
         stage('Hello') {
